@@ -54,6 +54,8 @@
 	<!--O Compiler to compiled Jar Executable -->
     <build>
         <plugins>
+
+            <!--O Compiler to compiled Jar Executable -->
             <plugin>
                 <groupId>org.springframework.boot</groupId>
                 <artifactId>spring-boot-maven-plugin</artifactId>
@@ -61,7 +63,19 @@
             		<mainClass>br.com.web.scraping.Main</mainClass>
         		</configuration>
             </plugin>
+
+            <!--Executor for poroject -->
+            <plugin>
+                <groupId>org.codehaus.mojo</groupId>
+                <artifactId>exec-maven-plugin</artifactId>
+                <version>1.4.0</version>
+                <configuration>
+                    <mainClass>br.com.web.scraping.Main</mainClass>
+                </configuration>
+            </plugin>
         </plugins>
     </build>
+
+    
 	
 </project>

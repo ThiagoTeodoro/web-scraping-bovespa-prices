@@ -81,7 +81,7 @@ public class WebCrawlerService {
 	 */
 	private String getPriceForAction(String actionName) {
 		
-		String result = "";
+        String result = "";        
 		
 		try {
 			
